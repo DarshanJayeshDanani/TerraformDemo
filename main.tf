@@ -14,12 +14,12 @@ terraform {
       bucket = "udemytrainingbucketterraformstatestorage"
       key = "terraform.tfstate"
       region = "us-east-1"
-
+      profile = "udemyterraformtraining"
       dynamodb_table = "udemyterraformtrainingstatelocking"
   }
 }
 
 provider "aws" {
-    profile = "udemyterraformtraining"
+    
     region = "us-east-1"
 }
