@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "mybucket" {
     for_each = var.bucket_name
-    bucket = "${each.key}-${each.value}"
+    bucket = "${each.key}-${each.value}-7533"
 }
 
 resource "aws_s3_bucket_ownership_controls" "mybucketownership" {
